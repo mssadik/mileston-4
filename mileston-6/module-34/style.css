@@ -1,0 +1,22 @@
+body{
+    background-color: tomato;
+}
+#section-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    background-color: green;
+}
+
+.country{
+    border: 5px solid tomato;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    margin-bottom: 12px;
+}
+
+
+@media screen and (man-width: 600px) {
+    
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <h1 id="heading" class="red">Bangladesh Distics</h1>
+        <ul>
+            <li>Gaibandha</li>
+            <li>Sundorbon</li>
+            <li>Bandorbon</li>
+        </ul>
+        <h2 id="title">Bangladesh</h2>
+        <input id=input-felid type="text">
+        <button id="update-btn">Update</button>
+    </section>
+
+    <section>
+        <h1>Bangladesh sports</h1>
+        <button onclick="myFunction()">click here</button>
+    </section>
+    <section id="comment-section">
+        <p>first commit</p>
+        <p>second commit</p>
+        <p>third commit</p>
+        <input id="input" type="text">
+        <button id="post-btn">Post</button>
+    </section>
+    <section>
+        <h2 id="delete-content">delete text</h2>
+        <input id="idnpu" type="text">
+        <button id="delete-btn" disabled>update</button>
+    </section><br><br><br><br>
+
+    <section>
+        <input id="input" type="email" placeholder="Input your email">
+        <button id="submit">Submit</button>
+    </section>
+    <script>
+
+        document.getElementById('input').addEventListener('keyup', function(event){
+            console.log(event.target.value);
+        })
+
+
+
+
+        document.getElementById('input').addEventListener('keyup', function(event){
+            const text = event.target.value;
+            if(text == 'delete'){
+                const getDeleteBtn = document.getElementById('delete-btn');
+                getDeleteBtn.removeAttribute('disabled');
+            }else{
+                getDeleteBtn.setAttribute('disabled');
+            }
+        })
+        document.getElementById('delete-btn').addEventListener('click', function(){
+          
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <section>
+        <h1 class="text-center mt-6 text-6xl font-bold">Let's get some <span class="text-amber-600">Moooney</span></h1>
+        <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto mt-12 ">
+
+            <div class="bg-amber-500 p-10 rounded-md">
+                <h3 class="text-4xl font-bold text-white">Deposit</h3>
+                <h2  class="text-4xl font-bold text-white">$<span id="pre-deposit">000</span> </h2>
+            </div>
+
+            <div class="bg-lime-500 p-10 rounded-md">
+                <h3 class="text-4xl font-bold text-white">Withdrow</h3>
+                <h2 class="text-4xl font-bold text-white">$<span id="pre-widthdrow">000</span></h2>
+            </div>
+
+            <div class="bg-red-300	 p-10 rounded-md">
+                <h3 class="text-4xl font-bold text-white">Blance</h3>
+                <h2 class="text-4xl font-bold text-white">$<span id="pre-blance">1240</span></h2>
+            </div>
+
+        </div>
+        <div class="grid grid-cols-2 gap-4 w-3/4 mx-auto mt-20">
+            <div class="bg-neutral-500 p-10 rounded-md">
+                <h3 class="text-4xl font-bold text-white">Plases Deposit</h3>
+                <input id="new-deposit-input" class="mt-3 block py-1 px-3 w-3/4 rounded-md" type="text" placeholder="$ amound you want do deposit">
+                <button id="deposit-btn" class="bg-sky-500 hover:bg-sky-700 text-white rounded-md mt-3 py-1 px-3 font-medium">Deposit</button>
+            </div>
+
+            <div class="bg-lime-300 p-10 rounded-md">
+                <h3 class="text-4xl font-bold text-white">Plases Withdrow</h3>
+                <input id="new-withdrow-input" class="mt-3 block py-1 px-3 w-3/4 rounded-md" type="text" placeholder="$ amound you want do withdrow">
+                <button id="withdrow-btn" class="bg-sky-500 hover:bg-sky-700 text-white rounded-md mt-3 py-1 px-3 font-medium">Withdrow</button>
+            </div>
+        </div>
+        <!-- withdrow and diposite area  -->
+    </section>
+
+    <script src="js/bqnk.js"></script>
+</body>
+</html>
